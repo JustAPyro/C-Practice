@@ -1,0 +1,30 @@
+# include <stdio.h>
+// https://www.learn-c.org/en/Conditions
+
+// Returns information about if the guess was correct
+void guessNumber(int guess) 
+{
+    if (guess == 555)
+    {   // Guess was correct
+        printf("Correct. You guessed it!");
+    }
+    else if (guess < 555)
+    {   // Guess was too low
+        printf("Your guess is too low.\n");
+    }
+    else if (guess > 555)
+    {   // Guess was too high
+        printf("Your guess is too high.\n");
+    }
+}
+
+
+// Entry
+int main() 
+{
+    // Guess some numbers per reqs. Should react to 555
+    guessNumber(500);
+    guessNumber(600);
+    guessNumber(555);
+    return 0;
+}
